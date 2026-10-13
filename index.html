@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NovaShift - The Universe is Your Battlefield</title>
+    <script src="js/tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Manrope:wght@200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="font-body">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#000f21]/80 backdrop-blur-2xl shadow-2xl shadow-orange-900/20">
+        <div class="flex justify-between items-center px-6 md:px-10 h-24">
+            <a class="text-2xl font-black text-white italic font-headline uppercase tracking-widest"
+                href="index.html">NovaShift</a>
+            <div class="hidden md:flex items-center gap-8 font-headline uppercase italic tracking-widest">
+                <a class="text-orange-500 font-black scale-105 duration-150" href="#universe">Universe</a>
+                <a class="text-slate-400 hover:text-white hover:glow-sm transition-colors duration-150"
+                    href="#battle-pass">Battle Pass</a>
+                <a class="text-slate-400 hover:text-white hover:glow-sm transition-colors duration-150"
+                    href="#clans">Clans</a>
+                <a class="text-slate-400 hover:text-white hover:glow-sm transition-colors duration-150"
+                    href="#store">Store</a>
+                <div class="relative" data-pages-dropdown>
+                    <button aria-expanded="false"
+                        class="flex items-center gap-1 text-slate-400 hover:text-white transition-colors uppercase italic"
+                        data-pages-toggle type="button">Pages <span
+                            class="material-symbols-outlined text-base">expand_more</span></button>
+                    <div class="nav-dropdown absolute right-0 top-10 w-56 rounded-xl border border-white/10 bg-[#061a31] p-2 shadow-2xl"
+                        data-pages-menu>
+                        <a class="flex items-center justify-between rounded-lg px-4 py-3 text-xs text-slate-300 hover:bg-white/10 hover:text-white"
+                            href="Pages/game-guide.html">Game Guide <span
+                                class="text-[9px] tracking-normal text-orange-500">PRO</span></a>
+                        <a class="flex items-center justify-between rounded-lg px-4 py-3 text-xs text-slate-300 hover:bg-white/10 hover:text-white"
+                            href="Pages/news.html">News <span
+                                class="text-[9px] tracking-normal text-orange-500">PRO</span></a>
+                        <a class="flex items-center justify-between rounded-lg px-4 py-3 text-xs text-slate-300 hover:bg-white/10 hover:text-white"
+                            href="Pages/store.html">Storefront <span
+                                class="text-[9px] tracking-normal text-orange-500">PRO</span></a>
+                        <a class="flex items-center justify-between rounded-lg px-4 py-3 text-xs text-slate-300 hover:bg-white/10 hover:text-white"
+                            href="Pages/support.html">Support <span
+                                class="text-[9px] tracking-normal text-orange-500">PRO</span></a>
+                    </div>
+                </div>
+            </div>
+            <button aria-expanded="false" aria-label="Open navigation" class="md:hidden text-white" data-mobile-toggle
+                type="button"><span class="material-symbols-outlined">menu</span></button>
+            <button
+                class="hidden md:block bg-orange-500 text-on-tertiary-fixed font-headline font-black uppercase italic px-8 py-3 rounded-lg scale-105 duration-150 hover:brightness-110 shadow-[0_0_20px_rgba(248,160,16,0.3)]">
+                Play Now
+            </button>
+        </div>
+        <div class="mobile-menu hidden flex-col gap-2 border-t border-white/10 bg-[#000f21] px-6 py-4 md:hidden"
+            data-mobile-menu>
+            <a class="py-2 text-slate-300" href="#universe">Universe</a>
+            <a class="py-2 text-slate-300" href="#battle-pass">Battle Pass</a>
+            <a class="py-2 text-slate-300" href="#clans">Clans</a>
+                <a class="py-2 text-orange-500" href="Pages/game-guide.html">Game Guide <span
+                    class="ml-2 text-[9px]">PRO</span></a>
+                <a class="py-2 text-slate-300" href="Pages/news.html">News <span
+                    class="ml-2 text-[9px] text-orange-500">PRO</span></a>
+                <a class="py-2 text-slate-300" href="Pages/store.html">Storefront <span
+                    class="ml-2 text-[9px] text-orange-500">PRO</span></a>
+                <a class="py-2 text-slate-300" href="Pages/support.html">Support <span
+                    class="ml-2 text-[9px] text-orange-500">PRO</span></a>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover brightness-50"
+                    data-alt="cinematic deep space nebula with vibrant electric purple and neon orange gas clouds, distant stars, and high-tech spaceship silhouettes"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq2g8Ykq18cfy2aUgQA1vEJGQRaI5xjj3fYtuQyNkWd4X39jfr33L1W0v39h1j6nhvE_XJQrPfejYeJo6NE5A2IWDMT98DcPJcp1nB9aKyey6Q0pwfI2pRKiLDHT6l7cnm1XGbKy5tq5xBOPg_2-ENcj2wNi1AwanuBS5mopH5j1xwIBuB814ewkBhFCIm3u9MCDIN06ki1lPMnecJr9IOkXJxumcXic3RJfEgUQlSAbPjiDKieICakWSExVcvNtLen9th-BZ-gHg" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#000f21] via-transparent to-transparent"></div>
+            </div>
+            <div class="relative z-10 text-center px-6 max-w-5xl">
+                <h1
+                    class="font-headline text-5xl md:text-8xl font-black italic uppercase tracking-tighter mb-6 text-white">
+                    The Universe is Your <span class="text-orange-500">Battlefield</span>
+                </h1>
+                <p class="font-body text-lg md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Shift between dimensions, pilot celestial interceptors, and dominate the cosmic arena in the
+                    definitive next-gen mobile combat experience.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <button
+                        class="w-full sm:w-auto bg-orange-500 text-on-tertiary-fixed font-headline font-black uppercase italic px-12 py-5 rounded-xl text-xl shadow-[0_0_40px_rgba(248,160,16,0.4)] hover:scale-105 transition-transform">
+                        Play Now
+                    </button>
+                    <button
+                        class="w-full sm:w-auto glass-panel border border-white/10 text-white font-headline font-black uppercase italic px-12 py-5 rounded-xl text-xl hover:bg-white/10 transition-all">
+                        Watch Trailer
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Universe Section (Asymmetric Spread) -->
+        <section class="py-24 px-10 bg-[#000f21]" id="universe">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-20">
+                    <span
+                        class="font-label text-orange-500 uppercase tracking-widest text-sm font-bold block mb-4">Exploration
+                        Mode</span>
+                    <h2 class="font-headline text-3xl md:text-6xl font-black italic uppercase text-white leading-tight">
+                        <span class="block whitespace-nowrap">Explore Infinite</span><span
+                            class="block whitespace-nowrap">Alien Worlds</span></h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+                    <div class="md:col-span-7 flex flex-col gap-8">
+                        <div class="group relative overflow-hidden rounded-3xl flex-grow min-h-[360px]">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            data-alt="bioluminescent alien jungle with floating islands, purple flora, and crystalline structures under a massive ringed planet"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRZ-9lDlk40-ys7xTV4S-WanFqTuxbQQVhwAX9ZpJ8MkRUPFDmDHmYmYTWqfnScBUfNXwzLzSwgrsvMcGs0kfAM5j4KFjJx4tzRSHUJZ_ywDCruUhiGRObBDXZg4aJ26nrwqZW508bmEbG6v60rv4sqVUxzsQmQK-OQQ5NhP56Cq-db54Mrf9m2e66ZM_TEPw4VWUwlq_H--kmlUSMkv1G7z-EDgIg1it-deXDZ-Pux3qR6a1InoKuZGHctSbPt4MluP2Z7iUd5kQ" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#000f21] to-transparent opacity-80"></div>
+                        <div class="absolute bottom-10 left-10">
+                            <h3 class="font-headline text-3xl font-bold uppercase italic text-white mb-2">Vespera Prime
+                            </h3>
+                            <p class="text-slate-300 max-w-sm">The bioluminescent heart of the galaxy. High-density
+                                oxygen and dangerous flora.</p>
+                        </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-3xl flex-grow min-h-[360px]">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="blue planet rising over a dark asteroid field with distant stars"
+                                src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#000f21] to-transparent opacity-80"></div>
+                            <div class="absolute bottom-8 left-8">
+                                <h3 class="font-headline text-2xl font-bold uppercase italic text-white">Astra Wastes</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-5 flex flex-col gap-8">
+                        <div class="group relative overflow-hidden rounded-3xl flex-grow">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="cyberpunk volcanic planet with rivers of neon orange lava and obsidian obsidian fortresses under a red sun"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiMBlBVC_LKFCEP_tTZhQgjJWkQGpEvi_iN8x2wtBbFqxUR5NJOQ316wUEf-XaY-v8o2cJu8zc7Xr1M-ZFfFIax99ezmlqoqU9suAxS3mQ0pt88KV6voXkeN2AoCz1Fq6280PvA3oZNhKHaVqgEReKLImpgTmq_qq9CiDX4DEUuuYXTQV9MemtaraC_0-pWYaYnfFOStpMDII6b87PcCbSkcqjM7HtzMNO4dT8FlTF-Vy5lu_Cgq8b03OB-dBqmCB4S9OEmoPnAG8" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#000f21] to-transparent opacity-80">
+                            </div>
+                            <div class="absolute bottom-8 left-8">
+                                <h3 class="font-headline text-2xl font-bold uppercase italic text-white">Magma Core</h3>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-3xl flex-grow">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="frozen crystal wasteland with giant blue ice shards and abandoned derelict spaceships half-buried in snow"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3wUL1V24hJDau7nF6BWGNQoyx57oAUbsWrEZJBbya6-9pNX-KhG3WJiaI0hVyQS5qiYTcjyNtx9L0GLMxUBKd4RXdgTKV8I4EphA194gRNcanpxKWtsRMltvjfO9jy6mFQQ9e3RonPoAw2L33WPHtSgjok7EHFfl4b_mn4nKGNueCvfL2r1JBRqjFFeE-yqIaWJmWITFIsbEv-zB0KR5FJocgwYt0Jz8-ZFbQNleYaUboEDDvoPA7pAvUbwVlAluJENcmdsR-Ffw" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#000f21] to-transparent opacity-80">
+                            </div>
+                            <div class="absolute bottom-8 left-8">
+                                <h3 class="font-headline text-2xl font-bold uppercase italic text-white">Cryos-9</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Battle Pass Section (Glassmorphism Bento) -->
+        <section class="py-32 bg-surface-container-highest/5 relative" id="battle-pass">
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                <div class="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-orange-500/10 blur-[120px] rounded-full"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-10 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+                    <div class="max-w-xl">
+                        <span
+                            class="font-label text-orange-500 uppercase tracking-widest text-sm font-bold block mb-4">Season
+                            04: Neural Overdrive</span>
+                        <h2 class="font-headline text-4xl md:text-7xl font-black italic uppercase text-white">Unlock
+                            Your <br />Full Potential</h2>
+                    </div>
+                    <button
+                        class="w-full md:w-auto border-2 border-orange-500 text-orange-500 font-headline font-black uppercase italic px-10 py-4 rounded-lg hover:bg-orange-500 hover:text-white transition-all">
+                        Upgrade Pass
+                    </button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="md:col-span-2 glass-panel p-6 md:p-10 rounded-[2rem] flex flex-col justify-between min-h-[340px] md:h-[400px]">
+                        <div>
+                            <span
+                                class="bg-orange-500 text-on-tertiary-fixed font-label text-[10px] font-black uppercase px-2 py-1 rounded mb-4 inline-block">Legendary
+                                Skin</span>
+                            <h3 class="font-headline text-3xl font-black italic uppercase text-white">Neon Wraith</h3>
+                            <p class="text-slate-400 mt-4 leading-relaxed">The ultimate pilot suit with integrated
+                                stealth modules and reactive pulse lighting.</p>
+                        </div>
+                        <img class="h-48 object-contain self-end"
+                            data-alt="3D render of a futuristic cyborg pilot in glowing orange and black armor, highly detailed metallic textures"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3bHHMBvyz-YG9ZKQ_wyFc6tLw0BFGt9AxcEVB_yDsxeXxEwFS36saRb0_uMTiHrdpJELUKKlBOxBhGLKOclDGqNuvwwp1cUqdOrBCB4zwqU4NdD-XNgbL23cp0QS8AHNAcuxc7b629Fs4brp5UNT0gZ9VnqgWuleH9jjUeHB2uQzawM7lurw3L2mOY4G6cL8eTZJ_2Tpd4zhWfzi4W8LrEr-RpBAELIj3x4L5ims70bIWO-HLWIBCwA9mM41U0j4iVf2Ciu11HGY" />
+                    </div>
+                    <div class="glass-panel p-8 rounded-[2rem] flex flex-col items-center text-center">
+                        <span class="material-symbols-outlined text-orange-500 text-5xl mb-6"
+                            style="font-variation-settings: 'FILL' 1;">token</span>
+                        <h3 class="font-headline text-xl font-black italic uppercase text-white">2500 Nova Credits</h3>
+                        <p class="text-slate-400 mt-2 text-sm">Currency for the cosmic shop.</p>
+                    </div>
+                    <div class="glass-panel p-8 rounded-[2rem] flex flex-col items-center text-center">
+                        <span class="material-symbols-outlined text-orange-500 text-5xl mb-6"
+                            style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+                        <h3 class="font-headline text-xl font-black italic uppercase text-white">Tier Boosters</h3>
+                        <p class="text-slate-400 mt-2 text-sm">Level up 50% faster this season.</p>
+                    </div>
+                    <div class="md:col-span-2 glass-panel p-6 md:p-8 rounded-[2rem] flex flex-col sm:flex-row items-start sm:items-center gap-5 md:gap-8 overflow-hidden">
+                        <div class="flex-1">
+                            <h3 class="font-headline text-2xl font-black italic uppercase text-white">Solar Flare FX
+                            </h3>
+                            <p class="text-slate-400 mt-2 text-sm">Custom jump drive trails and elimination effects.</p>
+                        </div>
+                        <img class="w-full sm:w-40 h-40 object-cover rounded-2xl shrink-0"
+                            data-alt="visual effect of a spaceship trail glowing with intense orange sparks and purple energy discharge"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8ICItiEKZOE7gXnmeZCDCALUhI0T5I0STsQM2Wkd6BG4JwDdXI0XVAQIsZ2h_zj9DzKVAp1N-_oCPFuSsIDjgqXWbBPSyPcmTjN31bxKXpuqwClvG_TklTqOJLpbDodalJjT4xFZFTmfLhPSPxvsH4Bu0IepYtm_8EDi2JMSB090BzakTVKkKFeDD4J0VhasHOEs9hK9rVcFjrr1gdQ0Gy3yMcHjaaSIwpOSFPf5Ye-tdSCoqlISHU90G3RmpANk5QHJKdy0r1jM" />
+                    </div>
+                    <div class="md:col-span-2 bg-orange-500 p-1 rounded-[2rem] shadow-[0_0_30px_rgba(248,160,16,0.2)]">
+                        <div class="bg-[#000f21] h-full w-full rounded-[1.9rem] p-8 flex items-center justify-between">
+                            <div>
+                                <h3 class="font-headline text-2xl font-black italic uppercase text-white">Final Reward
+                                </h3>
+                                <p class="text-orange-500 font-bold">Lvl 100: The Titan's Core</p>
+                            </div>
+                            <span class="material-symbols-outlined text-orange-500 text-4xl">workspace_premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clans Section (Asymmetric & Tonal Contrast) -->
+        <section class="py-32 bg-white text-[#000f21] rounded-t-[4rem]" id="clans">
+            <div class="max-w-7xl mx-auto px-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div class="order-2 lg:order-1">
+                        <img class="rounded-[3rem] shadow-2xl shadow-slate-300"
+                            data-alt="group of gamers sitting together in a modern dark lounge with neon lights, high-end mobile devices in hand, laughing and collaborating"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1WkySt4hZMiSTgQ-HfzzV8Fh3wHnlc-HeJb_1RZL1C-gt3YLzmKxBgWH1jJXc3cE52rw5WlBZ8FOSEG_A300Wfs5sSux1J4l0dposnEVvNjkCyTfgAObFEXOFy2-aBW_w39Omo4zlCQTpzxlw0mXT4OCKTCWTBhIbu4e8YM4bOsknqw5JgL5Y9OQYRmUKkct4ve6nHvaoRQaq8aV-fRySIVSjyXK-4U0jU1O-WwwQKOn7TrtKFuWkVyn731BQAGUiwv-VogglDgU" />
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <span
+                            class="font-label text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Unified
+                            Combat</span>
+                        <h2 class="font-headline text-5xl md:text-7xl font-black italic uppercase leading-[0.9] mb-8">
+                            Forged in <br />The Stars</h2>
+                        <p class="font-body text-xl text-slate-600 mb-10 leading-relaxed">
+                            Form your clan, coordinate tactical maneuvers, and compete in weekly Cosmic Wars for
+                            planetary dominance. Together, you are unstoppable.
+                        </p>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg"
+                                    style="font-variation-settings: 'FILL' 1;">groups</span>
+                                <div>
+                                    <h4 class="font-headline font-black uppercase italic text-lg">Clan Hub</h4>
+                                    <p class="text-slate-500">Dedicated private social space and trophy room.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg"
+                                    style="font-variation-settings: 'FILL' 1;">trophy</span>
+                                <div>
+                                    <h4 class="font-headline font-black uppercase italic text-lg">Global Leaderboards
+                                    </h4>
+                                    <p class="text-slate-500">Prove your superiority and earn exclusive clan-only skins.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-12 bg-surface-container-low text-on-surface-variant font-plus-jakarta text-sm">
+        <div class="flex flex-col items-center gap-6 px-8">
+            <div class="text-lg font-bold text-white font-headline uppercase italic tracking-widest">NovaShift</div>
+            <div class="flex flex-wrap justify-center gap-8 font-label">
+                <a class="hover:underline opacity-80 transition-opacity" href="Pages/support.html">Privacy Policy</a>
+                <a class="hover:underline opacity-80 transition-opacity" href="Pages/support.html">Terms of Flight</a>
+                <a class="hover:underline opacity-80 transition-opacity" href="Pages/support.html">Compliance</a>
+                <a class="hover:underline opacity-80 transition-opacity" href="Pages/news.html">Press Kit</a>
+            </div>
+            <div class="flex gap-6 mt-4">
+                <span
+                    class="material-symbols-outlined cursor-pointer hover:text-orange-500 transition-colors">brand_awareness</span>
+                <span
+                    class="material-symbols-outlined cursor-pointer hover:text-orange-500 transition-colors">public</span>
+                <span
+                    class="material-symbols-outlined cursor-pointer hover:text-orange-500 transition-colors">videogame_asset</span>
+            </div>
+            <p class="mt-4 text-center opacity-60">© 2024 AeroVision Systems. Elevate your perspective.</p>
+            <p class="text-center opacity-60">HTML template by <a class="text-orange-500 hover:underline"
+                    href="https://templatesjungle.com/" rel="noopener" target="_blank">TemplatesJungle</a>.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
